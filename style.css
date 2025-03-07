@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Irish Grover";
+}
+
+main {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url(images/mainBackground.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content {
+  width: 100%;
+}
+
+.title {
+  padding-top: 3rem;
+  color: white;
+  font-size: 80.13px;
+  text-align: center;
+  text-shadow: 8px 8px 5px black;
+}
+
+.instruct {
+  margin: 180px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.question-mark {
+  width: 200px;
+}
+
+.but {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.instruct button,
+button {
+  height: 62px;
+  width: 200px;
+  border-radius: 10px;
+  border: none;
+  background-color: #e06d01;
+  font-size: 25px;
+  color: white;
+  box-shadow: 10px 12px 2px 0;
+  cursor: pointer;
+}
+
+.numbers {
+  display: flex;
+  justify-content: space-around;
+}
+
+.dancingNum {
+  position: relative;
+  height: 210px;
+  z-index: 1;
+}
+
+.p1 {
+  animation: dance 2.5s linear 2s infinite alternate;
+}
+
+.p2 {
+  
+  animation: dance 2.5s linear 1s infinite alternate;
+}
+
+.p3 {
+  
+  animation: dance 3s linear 1.5s infinite alternate;
+}
+.p1a {
+  animation: dance 3s linear 1s infinite alternate;
+}
+.p2a {
+  
+  animation: dance 3s linear 2s infinite alternate;
+}
+
+.p3a {
+  
+  animation: dance 3s linear 0.5s infinite alternate;
+}
+
+.gameBox {
+  width: 90vw;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin: auto;
+  padding: 50px 0;
+  border-radius: 20px;
+  position: relative;
+  top: -200px;
+  z-index: 2;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  text-align: center;
+}
+
+.gameBox input {
+  height: 62px;
+  border-radius: 10px;
+  border: none;
+  text-align: center;
+  font-size: 25px;
+  color: black;
+}
+
+.InstructionBox {
+  width: 70vw;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+footer {
+  width: 90vw;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin: auto;
+  margin-top: 60px;
+  padding: 20px;
+  border-radius: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+footer * {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.icon {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 25px;
+}
+
+.list {
+  width: 80%;
+}
+
+.list ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+
+@keyframes dance {
+  from {
+    transform: translateY(0px);
+  }
+
+  to {
+    transform: translateY(400px);
+  }
+}
+
+button:hover {
+  background-color: #ca6303;
+  box-shadow: 10px 12px 2px 0 white;
+}
+
+@media (max-width: 580px) {
+  .title {
+    font-size: 60px;
+  }
+
+  .question-mark {
+    width: 100px;
+  }
+
+  .instruct button,
+  button {
+    height: 42px;
+    width: 150px;
+    border-radius: 7px;
+    font-size: 20px;
+  }
+
+  .gameBox input {
+    height: 42px;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    font-size: 20px;
+    color: black;
+  }
+
+  .instruct {
+    margin: 100px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    gap: 30px;
+  }
+
+  .dancingNum {
+    position: relative;
+    height: 100px;
+    z-index: 1;
+  }
+  .list {
+    width: 100%;
+    font-size: 12px;
+  }
+}

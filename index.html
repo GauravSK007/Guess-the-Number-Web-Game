@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess The Number</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="shortcut icon" href="favicon.ico" />
+  </head>
+  <body>
+    <main>
+      <div class="content">
+        <h1 class="title" id="top">Guess The Number Game</h1>
+        <div class="instruct">
+          <img
+            class="question-mark"
+            src="images/question-mark.png"
+            alt="question-mark" />
+          <div class="but">
+            <button onclick="scrollTogameInstruct()">Instructions</button>
+            <button onclick="scrollTogameBox()">Play</button>
+          </div>
+          <img
+            class="question-mark"
+            src="images/question-mark.png"
+            alt="question-mark" />
+        </div>
+        <div class="numbers">
+          <img class="dancingNum p1" src="images/num1.png" alt="num1" />
+          <img class="dancingNum p3" src="images/num3.png" alt="num3" />
+          <img class="dancingNum p2a" src="images/num2.png" alt="num2" />
+          <img class="dancingNum p3a" src="images/num1.png" alt="num1" />
+          <img class="dancingNum p2" src="images/num2.png" alt="num2" />
+          <img class="dancingNum p1a" src="images/num3.png" alt="num3" />
+        </div>
+        <div class="gameBox">
+          <h1>
+            🚀 "A number between 1️⃣ and 💯 has been 🔢 chosen by the 🤖
+            computer!" 🎯
+          </h1>
+          <h1>Please Enter Your Number</h1>
+          <input id="userInput" type="number" placeholder="Enter a Number" />
+          <button onclick="processInput()">Submit</button>
+        </div>
+        <div class="InstructionBox">
+          <h1>📝 Instructions</h1>
+          <ol>
+            <li>
+              <h3>
+                A secret number between 1 and 100 has been chosen by the
+                computer. 🎯
+              </h3>
+            </li>
+            <li><h3>You have 5 chances to guess the correct number. 🔢</h3></li>
+            <li><h3>After each guess, you will get a hint:</h3></li>
+            <li><h3>⬆️ Too low? Try a bigger number! 🎯</h3></li>
+            <li><h3>⬇️ Too high? Try a smaller number!</h3></li>
+            <li><h3>If you guess the correct number, you win! 🎉</h3></li>
+            <li>
+              <h3>
+                If you use all 5 attempts without guessing correctly, you lose!
+                😢
+              </h3>
+            </li>
+            <h2>All the best!!</h2>
+          </ol>
+        </div>
+      </div>
+      <footer>
+        <div class="icon">
+          <a href="https://github.com/GauravSK007" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/gauravsk2238/" target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="https://x.com/GauravS99811315" target="_blank"
+            ><i class="fa-brands fa-x-twitter"></i
+          ></a>
+        </div>
+        <div class="list">
+          <ul>
+            <li><a href="#top">Top</a></li>
+            <li><a href="port.html">Portfolio</a></li>
+            <li><a href="#">Netflix Clone</a></li>
+            <li><a href="#">Amazon Clone</a></li>
+          </ul>
+        </div>
+
+        <p>Thanks for playing!</p>
+        <p>Designed and Coded by Me</p>
+      </footer>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
